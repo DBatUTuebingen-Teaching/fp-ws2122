@@ -1,38 +1,40 @@
-## Compilation und Ausführung
+## Compiling and Executing Haskell Code
 
-- Haskell-Source-Files (Endung `.hs`) übersetzt ihr einfach mit dem Haskell-Compiler GHC und führt das Programm in der Shell aus:
+- Compile Haskell source file (extensions `.hs`) using the Haskell compiler GHC, 
+  then execute the resulting program in the shell:
 
   ~~~
-  $ ghc --make ‹file›.hs                     # übersetzt Source ‹file›.hs in ausführbares Programm ‹file›
-  $ ./‹file›                                 # Programm ‹file› ausführen
+  $ ghc --make ‹file›.hs                     # compile source ‹file›.hs into executable program ‹file›
+  $ ./‹file›                                 # run program ‹file› 
   ~~~
 
-  Alternativ könnt ihr `‹file›.hs` auch in die Haskell-REPL GHCi laden und dort ausführen:
+  Alternatively, load `‹file›.hs` into the Haskell REPL GHCi and evaluate at GHCI's prompt:
 
   ~~~
   $ ghci ‹file›.hs
   GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
   [1 of 1] Compiling Main             ( ‹file›.hs, interpreted )
   Ok, one module loaded.  
-  *Main> main                                -- Funktion main aufrufen
+  *Main> main                                -- invoke function main 
   ~~~
 
-  Weitere Option:
+  Another option:
 
   ~~~
   $ ghci
   GHCi, version 8.10.7: https://www.haskell.org/ghc/  :? for help
-  Prelude› :l ‹file.hs›                       -- Source ‹file.hs› in GHCi laden
+  Prelude› :l ‹file.hs›                       -- load source file ‹file.hs› into GHCi
   [1 of 1] Compiling Main             ( ‹file›.hs, interpreted )
   Ok, one module loaded.
-  Main> main                                  -- Funktion main aufrufen
+  Main> main                                  -- invoke function main
   …
-  Main> :r                                    -- Source ‹file›.hs nach Änderung neu laden
+  Main> :r                                    -- after ‹file›.hs has been edited, reload into GHCi
   ~~~
 
-- C-Source-Files (Ending `.c`, davon wird's kaum welche geben in dieser Vorlesung) einfach mit einem C-Compiler übersetzen und dann ausführen:
+- Compile C source files (extension `.c`, will rarely pop up in this course) using the C compiler `cc`,
+  then execute the resulting program in the shell:
 
   ~~~
-  $ cc ‹file›.c -o ‹file›                     # übersetzt Source ‹file›.c in ausführbares Programm ‹file›
-  $ ./‹file›                                  # Programm ‹file› ausführen
+  $ cc ‹file›.c -o ‹file›                     # compile source ‹file›.c into executable program ‹file›
+  $ ./‹file›                                  # run program ‹file›
   ~~~
