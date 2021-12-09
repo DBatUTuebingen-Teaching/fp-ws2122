@@ -1,7 +1,7 @@
 ## Notes on the Material
 
 Since this chapter features a variety of Haskell source files and
-modules, here's a quick summary of which source files imports
+modules, here's a quick summary of which source files import
 which module:
 
 
