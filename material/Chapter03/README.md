@@ -8,9 +8,9 @@ which module:
 |      Haskell source       |                          Imported module(s)                             |
 | ------------------------- | ----------------------------------------------------------------------- |
 | `library-exposed.hs`      | —                                                                       |
+| `rose.hs`                 | `M`                                                                     |
 | `set-language-shallow.hs` | `SetLanguageShallow1`, `SetLanguageShallow2`, `SetLanguageShallow2Card` |
 | `set-language-deep.hs`    | `SetLanguageDeep`, `SetLanguageDeepCard`                                |
-| `rose.hs`                 | `M`                                                                     |
 | `expr-language.hs`        | `ExprDeep`                                                              |
 | `expr-deep-num.hs`        | `ExprDeepNum`                                                           |
 | `expr-language-typed.hs`  | `ExprDeepGADTTyped`                                                     |
